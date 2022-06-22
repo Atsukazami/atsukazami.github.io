@@ -28,37 +28,31 @@
               <a id="playerbuilder"class="nav-link" href="">Player Builder</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
-
-    
-
-
+    <main class="container">
+    </main>
     <!-- script -->
     <script type="text/javascript">
       $( document ).ready(function() {
         $.get('/resource/home.html', function(data) {
 
-            $('body').html($(data));
+            $('main').html($(data));
       });
       $('#home').click( function() {
          $.get('/resource/home.html', function(data) {
             
-            $('body').html($(data));
+            $('main').html($(data));
         });
       });
       $('#playerbuilder').click( function() {
           $.get('/resource/player-builder.html', function(data) {
            
-            $('body').html($(data));
+            $('main').html($(data));
         });
       });
-      </script>
+    </script>
     <script type="text/javascript" src="\js\query-3.6.0.js"></script>
     <script type="text/javascript" src="\bootstrap-5.2.0\js\popper.min.js" ></script>
     <script type="text/javascript" src="\bootstrap-5.2.0\js\bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
