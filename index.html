@@ -36,18 +36,18 @@
     <!-- script -->
     <script type="text/javascript">
       $( document ).ready(function() {
-        $.get('/resource/home.html', function(data) {
+        $.get('\\resource\\home.html', function(data) {
 
             $('main').html($(data));
       });
       $('#home').click( function() {
-         $.get('/resource/home.html', function(data) {
+         $.get('\\resource\\home.html', function(data) {
             
             $('main').html($(data));
         });
       });
       $('#playerbuilder').click( function() {
-          $.get('/resource/player-builder.html', function(data) {
+          $.get('\\resource\\player-builder.html', function(data) {
            
             $('main').html($(data));
         });
